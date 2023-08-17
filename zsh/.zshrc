@@ -1,9 +1,5 @@
 # Set up the prompt
 
-autoload -Uz promptinit
-#promptinit
-#prompt adam1
-
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
@@ -46,4 +42,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # WSL2 so shit
 alias zidd='cd ~ && find . -name "*:Zone.Identifier" -type f -delete'
 
-PROMPT='$ '
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
