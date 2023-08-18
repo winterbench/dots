@@ -10,9 +10,9 @@ conf.window_decorations = 'RESIZE'
 conf.default_domain = 'WSL:Ubuntu'
 --conf.default_prog = { 'cmd.exe', '/k C:/work/zbat/shell.bat' }
 conf.default_prog = { 'zsh', '-l' }
-conf.default_cwd = 'C:/work'
-conf.font = wez.font('Fira Code')
-conf.font_size = 8
+--conf.default_cwd = 'C:/work'
+conf.font = wez.font('DinaRemasterII')
+conf.font_size = 12
 --conf.use_fancy_tab_bar = false
 
 conf.colors = {
